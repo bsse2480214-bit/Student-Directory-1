@@ -30,5 +30,18 @@ const Footer = () => {
     </footer>
   );
 };
+<div class="card text-center">
+  <div className="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h4 className="card-title">Special title treatment</h4>
+    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" className="btn-solid theme-primary mx-auto">Go somewhere</a>
+  </div>
+  <div className="card-footer fg-2">
+    2 days ago
+  </div>
+</div>
 
 export default Footer;

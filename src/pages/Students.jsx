@@ -1,13 +1,7 @@
-
 import React from 'react';
 
-
-// Importing StudentCard component
 import StudentCard from '../components/StudentCard';
-
-// Importing Student Form component
 import StudentForm from '../components/StudentForm';
-
 
 const Students = () => {
 
@@ -18,28 +12,36 @@ const Students = () => {
       name: "Farhan Aman",
       major: "Computer Science",
       year: "2",
-      gpa: "3.4"
+      gpa: "3.4",
+      email: "farhan@example.com",
+      phone: "03001234567"
     },
     {
       id: "102",
       name: "Khizran Zubair",
       major: "Software Eng.",
       year: "2",
-      gpa: "3.6"
+      gpa: "3.6",
+      email: "khizran@example.com",
+      phone: "03011234567"
     },
     {
       id: "103",
       name: "Muhammad Hussain",
       major: "Data Science",
       year: "3",
-      gpa: "2.9"
+      gpa: "2.9",
+      email: "hussain@example.com",
+      phone: "03021234567"
     },
     {
       id: "104",
       name: "Sufiyan Saleem",
       major: "Cyber Security",
       year: "1",
-      gpa: "3.2"
+      gpa: "3.2",
+      email: "sufiyan@example.com",
+      phone: "03031234567"
     }
   ];
 
@@ -63,13 +65,9 @@ const Students = () => {
       <div className="row g-4 mb-4">
 
         {students.map((student) => (
-
           <div className="col-md-3" key={student.id}>
-
             <StudentCard {...student} />
-
           </div>
-
         ))}
 
       </div>

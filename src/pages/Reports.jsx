@@ -1,12 +1,17 @@
 import React from 'react';
-
-const Reports = () => {
-  return (
-    <div className="container py-4">
-      <h2 className="fw-bold text-dark mb-3">System Reports</h2>
-      <p className="text-muted">Performance and semester evaluation reports will appear here.</p>
-    </div>
+function Reports(){
+  return(
+<div className="card">
+  <div className="card-header">
+    Featured
+  </div>
+  <div className="card-body">
+    <h4 className="card-title">Special title treatment</h4>
+    <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" className="btn-solid theme-primary">Go somewhere</a>
+  </div>
+</div>
   );
-};
+}
 
 export default Reports;
